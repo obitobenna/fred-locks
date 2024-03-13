@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <input type="checkbox" name="" id="chk1">
+        <div class="logo"><img src="./door-lock-logo-removebg-preview.png" alt=""></div>
+        <div class="search-box">
+            <form id="searchForm">
+                <input type="text" name="search" id="srch" placeholder="Search" autocomplete="off">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <ul id="suggestions" class="suggestions" style="display: none;"></ul>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+            </li>
+        </ul>
+        <div class="menu">
+            <label for="chk1">
+                <i class="fa fa-bars"></i>
+            </label>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="main-banner">
+        <div class="banner-content">
+            <h1>Ultimate Security with Fredmannson Innovations</h1>
+            <p>Protect your home with our advanced locking solutions.</p>
+            <a href="product.html" class="main-btn">Explore Our Products</a>
+        </div>
+    </section>
+
+<section id="our-products" class="our-products">
+    <div class="container">
+        <h2 class="section-title">Our Products</h2>
+        <div class="products-grid">
+            <div class="product-item">
+                <img src="lock 1.jpg" alt="Product 1">
+                <h3>Smart Door Lock 1</h3>
+                <p>Advanced security features with easy installation.</p>
+                <a href="product.html" class="btn">View More</a>
+            </div>
+            <div class="product-item">
+                <img src="lock 2.jpg" alt="Product 2">
+                <h3>Smart Door Lock 2</h3>
+                <p>Seamless integration with your smart home devices.</p>
+                <a href="product.html" class="btn">View More</a>
+            </div>
+            <div class="product-item">
+                <img src="lock 3.jpg" alt="Product 3">
+                <h3>Smart Door Lock 3</h3>
+                <p>Robust design with long-lasting durability.</p>
+                <a href="product.html" class="btn">View More</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="product-features">
+    <h2 class="features-heading">Explore Our Lock Features</h2> <!-- Your heading goes here -->
+    <div class="feature-container">
+        <div class="feature-item">
+            <i class="uil uil-lock"></i>
+            <h3>Advanced Security</h3>
+            <p>State-of-the-art encryption and privacy features ensure your home is protected from intruders.</p>
+        </div>
+        <div class="feature-item">
+            <i class="uil uil-wrench"></i>
+            <h3>Easy Installation</h3>
+            <p>Our locks are designed for easy DIY installation, with no special tools required.</p>
+        </div>
+        <div class="feature-item">
+            <i class="uil uil-signal"></i>
+            <h3>Smart Technology</h3>
+            <p>Control and monitor your door locks remotely with our intuitive smartphone app.</p>
+        </div>
+        <div class="feature-item" id="durableDesign" style="display:none;">
+            <i class="uil uil-shield"></i>
+            <h3>Durable Design</h3>
+            <p>Crafted with robust materials, our locks are built to last and withstand harsh weather conditions.</p>
+        </div>
+    </div>
+    <div class="button-container">
+        <button onclick="toggleFeature()" id="readMoreBtn">Read More</button>
+    </div>
+</section>
+<section class="about-us">
+    <div class="container">
+        <h2>About Fredmannson Innovations</h2>
+        <div class="about-content">
+            <img src="lock logo.jpg" alt="Our Team" class="about-image">
+            <div class="about-text">
+                <p>Welcome to Fredmannson Limited, your trusted partner in home security. Since our inception in 1995, we've committed ourselves to providing top-notch security solutions that keep families safe.</p>
+                <p>Our mission is to engineer high-quality door locks that blend innovative technology with user-friendly design. From our family to yours, we promise reliability, durability, and peace of mind.</p>
+                <a href="about.html" class="about-link">Learn More About Us</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials">
+    <div class="container">
+        <h2>What Our Customers Are Saying</h2>
+        <div class="testimonials-carousel">
+            <div class="testimonial active">
+                <img src="our customer 7.jpeg" alt="Customer 1">
+                <blockquote>"This is the first testimonial. Excellent product and service!"</blockquote>
+                <cite>- John Doe, Happy Customer</cite>
+            </div>
+            <div class="testimonial">
+                <img src="our customer 2.jpeg" alt="Customer 2">
+                <blockquote>"The second testimonial. Amazing quality and durability."</blockquote>
+                <cite>- Jane Smith, Satisfied Client</cite>
+            </div>
+            <div class="testimonial">
+                <img src="our customer 3.jpeg" alt="Customer 3">
+                <blockquote>"Another testimonial. The smart features are so convenient!"</blockquote>
+                <cite>- Emily Johnson, Tech Enthusiast</cite>
+            </div>
+            <!-- Add more testimonials as needed -->
+        </div>
+        <button class="prev" onclick="changeTestimonial(-1)">&#10094;</button>
+        <button class="next" onclick="changeTestimonial(1)">&#10095;</button>
+    </div>
+</section>
+<section class="customer-reviews">
+    <h2>Rave</h2>
+    <div class="review-card">
+        <img src="our customer 4.jpeg" alt="Customer 1">
+        <div class="review-details">
+            <h3>John Doe</h3>
+            <div class="rating">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9734;</span>
+            </div>
+            <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia nulla in lectus
+                hendrerit, vel lacinia tellus consequat. Sed tincidunt risus at lorem tristique, ac vehicula
+                lectus bibendum. Duis ut turpis eu lectus iaculis dignissim."
+            </p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+    </div>
+    <div class="review-card">
+        <img src="our customer 5.jpeg" alt="Customer 2">
+        <div class="review-details">
+            <h3>Jane Smith</h3>
+            <div class="rating">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9734;</span>
+                <span class="star">&#9734;</span>
+            </div>
+            <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia nulla in lectus
+                hendrerit, vel lacinia tellus consequat. Sed tincidunt risus at lorem tristique, ac vehicula
+                lectus bibendum. Duis ut turpis eu lectus iaculis dignissim."
+            </p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+    </div>
+    <div class="review-card">
+        <img src="our customer 6.jpeg"alt= "Customer 3">
+        <div class="review-details">
+            <h3>Mike Johnson</h3>
+            <div class="rating">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9734;</span>
+                <span class="star">&#9734;</span>
+                <span class="star">&#9734;</span>
+            </div>
+            <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia nulla in lectus
+                hendrerit, vel lacinia tellus consequat. Sed tincidunt risus at lorem tristique, ac vehicula
+                lectus bibendum. Duis ut turpis eu lectus iaculis dignissim."
+            </p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+    </div>
+
+    <section class="section" id="stay-ahead-section">
+        <h1>Stay Ahead of Intruders</h1>
+        <form action="https://formspree.io/f/xdoqdgww" method="post">
+            <input type="email" name="email" placeholder="info@email.com" required class="your-existing-input-class">
+            <br>
+            <button type="submit" class="button subscribe-button">Subscribe Now</button>
+            <a href="product.html">
+                <button type="button" class="button get-started-button">Get Started</button>
+            </a>
+        </form>
+    </section>
+
+    <section class="faqs">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How do I purchase a Fredmannson Innovations? <i class="fas fa-angle-down faq-toggle"></i></h3>
+                    <p>You can purchase our locks directly from our website or through authorized retailers. Visit our Products page for more information.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What warranty do you offer? <i class="fas fa-angle-down faq-toggle"></i></h3>
+                    <p>All Fredmannson Innovations come with a 2-year warranty covering manufacturing defects. Please refer to our Warranty page for more details.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Can I install the lock myself? <i class="fas fa-angle-down faq-toggle"></i></h3>
+                    <p>Yes, our locks are designed for easy DIY installation. You can find a step-by-step guide on our Installation page.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How secure are Fredmanson Locks? <i class="fas fa-angle-down faq-toggle"></i></h3>
+                    <p>Fredmannson locks are equipped with advanced security features, including encryption and biometric verification, to ensure maximum protection against unauthorized access.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Do you offer installation services? <i class="fas fa-angle-down faq-toggle"></i></h3>
+                    <p>Yes, we offer professional installation services for customers who prefer not to install the locks themselves. Contact our support team for more details and scheduling.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Can I integrate Fredmannson locks with my smart home system? <i class="fas fa-angle-down faq-toggle"></i></h3>
+                    <p>Yes, our smart locks are designed to be compatible with most leading smart home systems, allowing you to seamlessly integrate them into your existing setup for enhanced convenience and control.</p>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <section>
+        <div class="animated-section">
+            <div id="animatedText"></div>
+            <div id="icons" style="display: none;">
+                <i class="fas fa-shield-alt"></i>
+                <i class="fas fa-lock"></i>
+                <i class="fas fa-user-secret"></i>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="contact-form">
+            <h2>Get Secure Today</h2>
+            <form action="https://formspree.io/f/xdoqdgww" method="post">
+              <div class="input-field">
+                <input type="text" name="name" placeholder="Name" required>
+              </div>
+              <div class="input-field">
+                <input type="email" name="email" placeholder="Email" required>
+              </div>
+              <div class="input-field">
+                <input type="tel" name="phone" placeholder="Phone">
+              </div>
+              <div class="input-field">
+                <textarea name="message" placeholder="Message" required></textarea>
+              </div>
+              <button type="submit" class="submit-button">Contact Us Now</button>
+            </form>
+          </div>
+    </section>
+    <section class="contact-section" id="contact-section">
+        <div class="section-header">
+          <h1>Contact Us</h1>
+        </div>
+        <div class="contact-card">
+          <h2>Phone</h2>
+          <p>+234 803 305 54467 , +234 803 683 4879</p>
+        </div>   cd path/to/your/project
+        <div class="contact-card">
+          <h2>Email</h2>
+          <p>Fredmannson@yahoo.com</p>
+        </div>
+        <div class="contact-card">
+          <h2>Head office</h2>
+          <p>No 20 idoluwo str., idumota Lagos Island</p>
+        </div>
+        <div class="contact-card">
+          <h2>Working Hours</h2>
+          <p>Mon - Fri: 9am - 6pm</p>
+        </div>
+        <div class="contact-card">
+            <h2>Branches</h2>
+            <p>Abuja , Onitsha, Aba , Ilorin</p>
+
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <img src="door-lock-logo-removebg-preview.png" alt="Logo" class="footer-logo">
+                <p>"Our mission at FredmansonSmartLocks is to revolutionize security with innovative door lock solutions that ensure safety, convenience, and peace of mind for every home and business."</p>
+            </div>
+            <div class="footer-section links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section services">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Installation Services</a></li>
+                    <li><a href="#">24/7 Support</a></li>
+                    <li><a href="#">Custom Lock Solutions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-phone"></i> +234 803 305 54467, +234  803 683 4879</p>
+                <p><i class="fas fa-envelope"></i> Fredmannson@yahoo.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+            <div class="social-links">
+                <a href="facebook.com"><i class="fab fa-facebook-f"></i></a>
+                <a href="twitter.com"><i class="fab fa-twitter"></i></a>
+                <a href="instagram.com"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+<script src="myscripts.js"></script>
+
+
+</body>
+</html>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

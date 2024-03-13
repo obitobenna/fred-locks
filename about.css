@@ -1,0 +1,244 @@
+
+#about-header {
+    background-image: url("about\ us\ banner.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: 0 -10rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+    position: relative; 
+}
+
+#about-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+}
+
+#about-header h2,
+#about-header p {
+    color: #fff;
+    position: relative; 
+    z-index: 2; 
+}
+
+@media (max-width: 768px) {
+    #about-header {
+        width: 100%;
+        background-image: url('about\ us\ banner.jpg');
+        background-size: cover; 
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+
+@media (max-width: 768px) {
+    .About-Header {
+        width: 100%;
+    }
+}
+    body, html {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+}
+
+.vision-approach-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    align-content: center;
+}
+
+.vision-approach-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+    padding: 0 3rem;
+}
+
+.vision-photo img, .approach-photo img ,.process-photo img {
+    width: 500px; 
+    max-width: 400px; 
+    height: 400px; 
+    object-fit: cover; 
+    margin-right: 120px;
+    border-radius: 20px;
+}
+.vision-text, .approach-text, .process-text {
+    width: 100%; 
+    max-width: 600px; 
+    height: auto; 
+    border-radius: 15px; 
+    border: 1px solid #ccc; 
+    padding: 20px; 
+    margin: 0 auto; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+.vision-text h2, .approach-text h2 , .process-text h2 {
+    font-size: 2.5rem; 
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.vision-text p, .approach-text p  ,.process-text{
+    text-align: left;
+    color: #666;
+    margin-bottom: 20px;
+    word-break: keep-all;
+}
+
+@media (max-width: 768px) {
+    .vision-approach-container {
+        flex-direction: column;
+        gap: 20px; /* Reduced gap for smaller screens */
+
+    }
+
+    .vision-photo img, .approach-photo img , .process-photo img{
+        max-width: 100%; /* Allows image to fill container on smaller screens */
+    }
+
+    .vision-text p , .approach-text , .process-text{
+        margin-bottom: 10px;
+    }
+    .vision-text p, .approach-text p  , .process-text p{
+        text-align: left;
+    }
+
+}
+.discount-section {
+    background-color: #1F3B4D; /* Deep, rich blue background */
+    color: white;
+    padding: 60px 30px;
+    text-align: center;
+    border-radius: 10px; /* Soft rounded corners for the section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.discount-section p {
+    font-size: 1.5rem; /* Larger font size for the text */
+    margin-bottom: 20px; /* Space between text and input field */
+}
+
+.discount-section input[type="email"] {
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    width: 50%; /* Adjust input width */
+    max-width: 300px; /* Maximum width to maintain form factor on larger screens */
+    margin-bottom: 20px; /* Space between input and buttons */
+    font-size: 1rem;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle inner shadow for depth */
+}
+
+.button {
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 25px; /* Smooth rounded corners for buttons */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-weight: 500; /* Medium font weight */
+    letter-spacing: 0.05em; /* Slight letter spacing for readability */
+}
+
+.subscribe-button {
+    background-color: #D4AF37; /* Orange background color for subscribe button */
+    color: #1F3B4D;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.subscribe-button:hover, .get-started-button:hover {
+    transform: translateY(-3px); /* Slight lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover for interaction feedback */
+}
+
+.get-started-button {
+    background-color: #FFD700;
+    color: #1F3B4D;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .discount-section input[type="email"] {
+        width: 70%; /* Increase input width on smaller screens for better usability */
+    }
+}
+.footer {
+    background-color: #264c64;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px; /* Adjust based on your layout */
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    margin: 10px;
+    flex: 1; /* Allows sections to grow and fill the space */
+    min-width: 150px; /* Ensures content does not get too squished */
+}
+
+.footer-logo {
+    max-width: 100px; /* Adjust based on your logo size */
+    margin-bottom: 10px;
+}
+
+.footer-section h4, .footer-section p {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    background-color:#1F3B4D;
+    padding: 10px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}
