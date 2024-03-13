@@ -8,9 +8,7 @@ const products = [
     { name: "Jig Saw", url: "product.html#Jig Saw" },
     { name: "Innovaive Duo", url: "product.html#Innovative Duo" },
     { name: "Multi-Tool Set", url: "product.html#Multi-Tool Set" },
-  
-    // Add more products as needed
-];
+]
 
 // Function to display suggestions
 function displaySuggestions(suggestions) {
