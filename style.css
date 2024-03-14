@@ -388,9 +388,9 @@ header .menu{
     background: #ddd; 
     text-align: center;
     background-color: #1F3B4D;
-    color:#f8f8f8 ;
-
+    color:#f8f8f8;
     padding: 50px 0;
+    overflow-x: hidden;
 }
 
 
