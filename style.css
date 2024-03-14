@@ -88,16 +88,18 @@ header .logo img{
 
 @media (max-width: 480px) {
     .search-box input {
-        padding: 0 45px 0 10px; 
+        padding: 0 45px 0 10px; /* Further adjust padding for very small screens */
     }
 }
 header ul {
     flex:2;
     display: flex;
     justify-content: space-evenly;
+    list-style: none;
 }
 header ul li{
-    list-style: none;
+    display: flex;
+    align-items: center;
 }
 header ul li a{
     text-decoration: none;
@@ -113,6 +115,42 @@ header .menu{
     font-size: 2.5em;
     display: none;
 }
+header ul li a i {
+    font-size: 1em; 
+    }
+    
+/* Media Queries for responsiveness */
+@media (max-width: 1024px) {
+    /* Adjustments for smaller screens */
+    header ul li a i {
+        font-size: 0.9em; /* Slightly reduce icon size */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Further adjustments for even smaller screens */
+    header ul li a i {
+        font-size: 0.8em; /* Further reduce icon size */
+        padding: 5px; /* Reduce padding around icons */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjustments for mobile screens */
+    header ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: center;
+    }
+
+    header ul li a {
+        padding: 5px; /* Reduce padding for a tighter layout */
+    }
+
+    header ul li a i {
+        font-size: 0.7em; /* Reduce icon size for mobile */
+    }
+}
+
 
 @media(max-width:768px){
     header ul{
@@ -136,6 +174,8 @@ header .menu{
         right: 0;
         
     }
+
+
 }
 .suggestions {
     list-style: none;
