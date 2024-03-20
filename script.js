@@ -1,3 +1,23 @@
+document.querySelectorAll('.buy-now').forEach(item => {
+    item.addEventListener('click', function(e) {
+        e.preventDefault();
+        var imgSrc = this.getAttribute('data-img-src');
+        document.getElementById('modalImg').src = imgSrc;
+        document.getElementById('productModal').style.display = "block";
+    });
+});
+
+// When the user clicks on <span> (x), close the modal
+document.querySelector('.close').addEventListener('click', function() {
+    document.getElementById('productModal').style.display = "none";
+});
+
+// Click outside of the modal to close it
+window.onclick = function(event) {
+    if (event.target == document.getElementById('productModal')) {
+        document.getElementById('productModal').style.display = "none";
+    }
+}
 const products = [
     { name: "Impact Drill", url: "product.html#Impact Drill" },
     { name: "Electric Router", url: "product.html#Electric Router" },
