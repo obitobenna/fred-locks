@@ -40,7 +40,7 @@ header .logo img{
 
 /* Adjust the search input */
 .search-box input {
-    width: calc(100% - 50px); /* Adjust width to leave space for the button */
+    width: calc(100% - 70px); /* Adjust width to leave space for the button */
     height: 40px;
     border: none;
     outline: none;
@@ -76,7 +76,8 @@ header .logo img{
 
     .search-box input {
         font-size: 14px; 
-        padding: 0 50px 0 15px; 
+        padding: 0 50px 0 24px; 
+        
     }
 
     .search-box button {
@@ -88,7 +89,7 @@ header .logo img{
 
 @media (max-width: 480px) {
     .search-box input {
-        padding: 0 45px 0 10px; /* Further adjust padding for very small screens */
+        padding: 0 45px 0 28px; /* Further adjust padding for very small screens */
     }
 }
 header ul {
