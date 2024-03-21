@@ -260,6 +260,22 @@ header ul li a i {
 .main-btn:hover {
     background-color: #b3922f;
 }
+@media (max-width: 320px) {
+    .banner-content {
+        max-width: 90%;
+    }
+    .banner-content h1{
+        font-size: 2rem;
+    }
+    .banner-content p{
+        font-size: 1.2rem
+    }
+    .main-btn {
+        padding: 8px 16px; /* Slightly smaller padding */
+        font-size: 0.9rem; /* Slightly smaller font size */
+    }
+}
+
 
 .our-products {
     padding: 50px 0;
@@ -397,7 +413,7 @@ header ul li a i {
         width: 100%; /* Full width on very small screens */
     }
 }
-
+   
 
 .feature-container {
     display: flex;
@@ -447,7 +463,18 @@ header ul li a i {
 #readMoreBtn:hover {
     background-color: #b3922f;
 }
+@media (max-width: 320px) {
+    .features-heading {
+       margin-right: 25px;
+    }
+    .feature-container{
+        width: calc(100% - 25px); /* Adjust width for smaller screens */;
+        margin-left: 10px;
+        
+    }
+}
 
+        
 .testimonials {
     background: #ddd; 
     text-align: center;
@@ -578,6 +605,11 @@ button.next {
         max-width: 100%;
     }
 }
+@media (max-width: 320px){
+    .about-us .container h2{
+        font-size: 2rem;
+    }
+}
 .customer-reviews {
     background-color: #ddd;
     padding: 50px 0;
@@ -668,6 +700,12 @@ button.next {
         display: block;
         width: 89%;
         margin: 0 0 40px;
+    }
+}
+@media (max-width: 320px){
+    .review-card{
+        width: calc(100% - 50px);
+        margin-left: 3px;
     }
 }
 .section {
@@ -956,6 +994,11 @@ h2 {
 
     .contact-card:last-child {
       margin-bottom: 0;
+    }
+  }
+  @media (max-width: 320px){
+    .contact-card{
+        
     }
   }
   

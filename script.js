@@ -1,23 +1,36 @@
-document.querySelectorAll('.buy-now').forEach(item => {
-    item.addEventListener('click', function(e) {
-        e.preventDefault();
-        var imgSrc = this.getAttribute('data-img-src');
-        document.getElementById('modalImg').src = imgSrc;
-        document.getElementById('productModal').style.display = "block";
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('productModal');
+    const modalImg = document.getElementById('modalImg');
+    const closeModalSpan = document.querySelector('.close');
+    const buyNowButtons = document.querySelectorAll('.buy-now');
+
+    // Function to open modal with specific image
+    const openModal = (imgSrc) => {
+        modalImg.src = imgSrc;
+        modal.style.display = "block";
+    };
+
+    // Setup event listeners for all '.buy-now' buttons
+    buyNowButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            const imgSrc = this.getAttribute('data-img-src');
+            openModal(imgSrc);
+        });
+    });
+
+    // Close modal when 'X' is clicked
+    closeModalSpan.addEventListener('click', function() {
+        modal.style.display = "none";
+    });
+
+    // Close modal when clicking outside of it
+    window.addEventListener('click', function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
     });
 });
-
-// When the user clicks on <span> (x), close the modal
-document.querySelector('.close').addEventListener('click', function() {
-    document.getElementById('productModal').style.display = "none";
-});
-
-// Click outside of the modal to close it
-window.onclick = function(event) {
-    if (event.target == document.getElementById('productModal')) {
-        document.getElementById('productModal').style.display = "none";
-    }
-}
 const products = [
     { name: "Impact Drill", url: "product.html#Impact Drill" },
     { name: "Electric Router", url: "product.html#Electric Router" },
