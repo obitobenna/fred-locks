@@ -148,8 +148,17 @@ body, html {
 
     .modal{
         top: 80px;
+    
+    }
+    
+    .close{
+        position: absolute;
+        right: 5%;
+        top: 3%;
+        color: #aaa;
     }
 }
+    
   
   #caption {
     margin: auto;

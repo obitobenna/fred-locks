@@ -33,6 +33,9 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 const products = [
+    { name: "Door lock 1", url: "product.html#Door lock 1" },
+    { name: "Door lock 2", url: "product.html#Door lock 2" },
+    { name: "Door lock 3", url: "product.html#Door lock 3" },
     { name: "Impact Drill", url: "product.html#Impact Drill" },
     { name: "Electric Router", url: "product.html#Electric Router" },
     { name: "Circular Saw", url: "product.html#Circular Saw" },
