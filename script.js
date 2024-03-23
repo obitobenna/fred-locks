@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
 const products = [
     { name: "Impact Drill", url: "product.html#Impact Drill" },
     { name: "Electric Router", url: "product.html#Electric Router" },
